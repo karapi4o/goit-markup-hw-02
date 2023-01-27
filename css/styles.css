@@ -1,0 +1,139 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2e2f42;
+}
+
+:root {
+  --header-headerlink-hero2-color: #2e2f42;
+}
+
+:root {
+  --header-web-button-color: #4d5ae5;
+}
+
+.header {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  --header-headerlink-hero2-color: #2e2f42;
+  color: var(--header-headerlink-hero2-color);
+}
+
+.header-web {
+  color: var(--header-web-button-color);
+}
+
+.header-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--header-headerlink-hero2-color);
+}
+
+.contact {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #434455;
+}
+
+.contact:focus,
+.contact:hover {
+  color: blue;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  color: blue;
+}
+
+button:active {
+  color: white;
+  background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  color: var(--header-web-button-color);
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--header-headerlink-hero2-color);
+}
+
+.hero-3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #434455;
+}
+
+.hero-2:focus,
+.hero-2:hover {
+  color: blue;
+}
+
+.hero-3:focus,
+.hero-3:hover {
+  color: blue;
+}
+
+.hero-2:active,
+.hero-3:active {
+  color: red;
+}
+
+.footer-bgd {
+  width: 1440px;
+  height: 310px;
+  left: 0px;
+  top: 1764px;
+  background: #2e2f42;
+  width: 1440px;
+  height: 310px;
+}
+
+.footer-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e7e9fc;
+}
+
+.header.footer {
+  --header-headerlink-hero2-color: #f4f4fd;
+}
