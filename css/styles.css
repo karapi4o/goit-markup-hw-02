@@ -3,137 +3,206 @@ body {
   color: #2e2f42;
 }
 
-:root {
-  --header-headerlink-hero2-color: #2e2f42;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 :root {
-  --header-web-button-color: #4d5ae5;
+  --active-color: #404bbf;
 }
 
-.header {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current {
+  color: var(--active-color);
+}
+
+:root {
+  --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color: #2e2f42;
+}
+
+:root {
+  --logoweb-mainsection-launch-filter-color: #4d5ae5;
+}
+
+:root {
+  --contact-advantagestext-filterbuisnes-heronameprofession-color: #434455;
+}
+
+:root {
+  --mainsectionlaunch--mainsectiontitle-color: #ffffff;
+}
+
+:root {
+  --footer-logo-studio-color: #f4f4fd;
+}
+
+:root {
+  --footertext-bordercolor-color: #e7e9fc;
+}
+
+.logo-web {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  --header-headerlink-hero2-color: #2e2f42;
-  color: var(--header-headerlink-hero2-color);
+  color: var(--logoweb-mainsection-launch-filter-color);
 }
 
-.header-web {
-  color: var(--header-web-button-color);
+.header-logo-studio {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(
+    --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color
+  );
 }
 
-.header-link {
-  font-family: "Roboto";
-  font-style: normal;
+.nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: var(--header-headerlink-hero2-color);
 }
 
 .contact {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #434455;
+  color: var(--contact-advantagestext-filterbuisnes-heronameprofession-color);
+  font-style: normal;
 }
 
 .contact:focus,
 .contact:hover {
-  color: blue;
+  color: var(--logoweb-mainsection-launch-filter-color);
 }
 
-.pointer {
+.main-section {
+  background: var(
+    --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color
+  );
+}
+
+.main-section-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  color: var(--mainsectionlaunch--mainsectiontitle-color);
+}
+
+.main-section-launch {
+  font-family: inherit;
+  color: var(--mainsectionlaunch--mainsectiontitle-color);
+  background: var(--logoweb-mainsection-launch-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   cursor: pointer;
 }
 
-button:focus,
-button:hover {
-  color: blue;
-}
-
-button:active {
-  color: white;
-  background: #404bbf;
+.main-section-launch:active {
+  color: var(--logoweb-mainsection-launch-color);
+  background-color: var(--mainsectionlaunch--mainsectiontitle-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-button {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  border: none;
-  color: var(--header-web-button-color);
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.hero-2 {
-  font-family: "Roboto";
-  font-style: normal;
+.advantages {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: var(--header-headerlink-hero2-color);
 }
 
-.hero-3 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+.advantages-text {
   font-size: 16px;
   line-height: 24px;
-  color: #434455;
+  color: var(--contact-advantagestext-filterbuisnes-heronameprofession-color);
 }
 
-.hero-2:focus,
-.hero-2:hover {
-  color: blue;
+.hero {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
 }
 
-.hero-3:focus,
-.hero-3:hover {
-  color: blue;
+.hero-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
-.hero-2:active,
-.hero-3:active {
-  color: red;
+.hero-name-profession {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--contact-advantagestext-filterbuisnes-heronameprofession-color);
+}
+
+.filter {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--logoweb-mainsection-launch-filter-color);
+  background: var(--footer-logo-studio-color);
+  border: 1px solid var(--footertext-bordercolor-color);
+  border-radius: 4px;
+}
+
+.filter:active {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--mainsectionlaunch--mainsectiontitle-color);
+  background: var(--active-color);
+}
+
+.filter-buisnes-descr {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: var(
+    --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color
+  );
+}
+
+.filter-buisnes {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--contact-advantagestext-filterbuisnes-heronameprofession-color);
+  text-decoration: none;
 }
 
 .footer-bgd {
   width: 1440px;
   height: 310px;
-  left: 0px;
-  top: 1764px;
-  background: #2e2f42;
+  background: var(
+    --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color
+  );
   width: 1440px;
   height: 310px;
 }
 
 .footer-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #e7e9fc;
+  color: var(--footertext-bordercolor-color);
 }
 
-.header.footer {
-  --header-headerlink-hero2-color: #f4f4fd;
+.footer-logo-studio {
+  color: var(--footer-logo-studio-color);
 }
