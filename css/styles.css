@@ -1,6 +1,34 @@
+:root {
+  --active-color: #404bbf;
+}
+
+:root {
+  --base-color: #2e2f42;
+}
+
+:root {
+  --iris-color: #4d5ae5;
+}
+
+:root {
+  --slate-color: #434455;
+}
+
+:root {
+  --white-color: #ffffff;
+}
+
+:root {
+  --footer-logo-studio-color: #f4f4fd;
+}
+
+:root {
+  --footertext-bordercolor-color: #e7e9fc;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: #2e2f42;
+  color: var(--base-color);
 }
 
 .visually-hidden {
@@ -16,38 +44,10 @@ body {
   margin: -1px;
 }
 
-:root {
-  --active-color: #404bbf;
-}
-
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.current {
   color: var(--active-color);
-}
-
-:root {
-  --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color: #2e2f42;
-}
-
-:root {
-  --logoweb-mainsection-launch-filter-color: #4d5ae5;
-}
-
-:root {
-  --contact-advantagestext-filterbuisnes-heronameprofession-color: #434455;
-}
-
-:root {
-  --mainsectionlaunch--mainsectiontitle-color: #ffffff;
-}
-
-:root {
-  --footer-logo-studio-color: #f4f4fd;
-}
-
-:root {
-  --footertext-bordercolor-color: #e7e9fc;
 }
 
 .logo-web {
@@ -55,7 +55,8 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  color: var(--logoweb-mainsection-launch-filter-color);
+  color: var(--iris-color);
+  text-decoration: none;
 }
 
 .header-logo-studio {
@@ -63,33 +64,40 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  color: var(
-    --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color
-  );
+  color: var(--base-color);
 }
 
 .nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  color: var(--base-color);
+  text-decoration: none;
 }
 
 .contact {
   font-size: 16px;
   line-height: 24px;
-  color: var(--contact-advantagestext-filterbuisnes-heronameprofession-color);
+  color: var(--slate-color);
   font-style: normal;
+  text-decoration: none;
 }
 
 .contact:focus,
 .contact:hover {
-  color: var(--logoweb-mainsection-launch-filter-color);
+  color: var(--active-color);
+}
+
+.filter-item {
+  text-decoration-line: none;
+}
+
+.marker-non {
+  list-style-type: none;
 }
 
 .main-section {
-  background: var(
-    --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color
-  );
+  background: var(--base-color);
 }
 
 .main-section-title {
@@ -97,23 +105,27 @@ body {
   font-size: 56px;
   line-height: 60px;
   letter-spacing: 0.02em;
-  color: var(--mainsectionlaunch--mainsectiontitle-color);
+  color: var(--white-color);
 }
 
 .main-section-launch {
   font-family: inherit;
-  color: var(--mainsectionlaunch--mainsectiontitle-color);
-  background: var(--logoweb-mainsection-launch-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--white-color);
+  background: var(--iris-color);
   border-radius: 4px;
+  border: 1px solid var(--base-color);
   cursor: pointer;
 }
 
+.main-section-launch:focus,
+.main-section-launch:hover {
+  color: var(--active-color);
+}
+
 .main-section-launch:active {
-  color: var(--logoweb-mainsection-launch-color);
-  background-color: var(--mainsectionlaunch--mainsectiontitle-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--iris-color);
+  background-color: var(--white-color);
+
   border-radius: 4px;
 }
 
@@ -126,7 +138,7 @@ body {
 .advantages-text {
   font-size: 16px;
   line-height: 24px;
-  color: var(--contact-advantagestext-filterbuisnes-heronameprofession-color);
+  color: var(--slate-color);
 }
 
 .hero {
@@ -144,7 +156,7 @@ body {
 .hero-name-profession {
   font-size: 16px;
   line-height: 24px;
-  color: var(--contact-advantagestext-filterbuisnes-heronameprofession-color);
+  color: var(--slate-color);
 }
 
 .filter {
@@ -153,20 +165,23 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: var(--logoweb-mainsection-launch-filter-color);
+  color: var(--iris-color);
   background: var(--footer-logo-studio-color);
   border: 1px solid var(--footertext-bordercolor-color);
   border-radius: 4px;
 }
 
+.filter:focus,
+.filter:hover {
+  color: var(--active-color);
+}
+
 .filter:active {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: var(--mainsectionlaunch--mainsectiontitle-color);
+  color: var(--white-color);
   background: var(--active-color);
 }
 
@@ -174,25 +189,19 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  text-decoration: none;
-  color: var(
-    --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color
-  );
+  color: var(--base-color);
 }
 
 .filter-buisnes {
   font-size: 16px;
   line-height: 24px;
-  color: var(--contact-advantagestext-filterbuisnes-heronameprofession-color);
-  text-decoration: none;
+  color: var(--slate-color);
 }
 
 .footer-bgd {
   width: 1440px;
   height: 310px;
-  background: var(
-    --navlinc-headerlogostudio-mainsection-filterbuisnesdescr-footerbgd-color
-  );
+  background: var(--base-color);
   width: 1440px;
   height: 310px;
 }
