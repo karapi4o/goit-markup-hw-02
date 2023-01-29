@@ -190,7 +190,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--white-color);
-  background: var(--iris-color);
+  background: var(--active-color);
 }
 
 .filter-buisnes-descr {
